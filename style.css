@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+   
+    background-color:rgba(211, 211, 211, 0.629);
+    display: flex;
+    flex-wrap: wrap;
+}
+.conntainer{
+    display: flex;
+}
+.heading{
+     width: 100vw;
+     height: 5.5rem;
+     background-color:rgb(242, 222, 9) ;
+     color: rgb(28, 23, 23);
+     box-shadow: 0px 10px 16px rgb(248,247,247);
+
+}
+.heading h1{
+    line-height: 5.8rem;
+    margin-left: 2rem;
+    font-weight: 400;
+}
+.add:active{
+    transform: scale(0.98);
+}
+
+.btn-div{
+    position: fixed;
+    top: 7rem;
+    right: 1rem;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: 20%;
+    height: 100vh;
+    /* background-color: red; */
+
+}
+button{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    /* background-color: red; */
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+
+
+}
+button.learn-more {
+    width: 12rem;
+    height: auto;
+    /* background-color: red; */
+}
+button.learn-more .circle{
+     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem; 
+    /* background-color: red; */
+     background:rgb(242, 222, 9); 
+    border-radius: 1.625rem; 
+}
+button.learn-more .circle .icon{
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: whitesmoke;
+    /* background-color: red; */
+}
+button.learn-more .circle .icon.arrow{
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    /* color: red; */
+    background: none;
+    
+}
+button.learn-more .circle .icon.arrow::before{
+    position: absolute;
+    content: "";
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: .625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid whitesmoke;
+    border-right: 0.125rem solid whitesmoke;
+    transform: rotate(45deg);
+    
+
+    /* background-color: red; */
+}
+button.learn-more .button-text{
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: rgb(14, 13, 13);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+
+
+}
+button:hover .circle{
+width: 100%;
+
+}
+button:hover .circle .icon.arrow{
+    background: whitesmoke;
+    transform: translate(1rem,0);
+
+}
+button:hover .button-text{
+    color: whitesmoke;
+}
+
+.note{
+   background-color: whitesmoke;
+   background-color:rgb(242, 222, 9);
+   margin: 40px 15px;
+   height: 10rem;
+   width: 20rem;
+   border: 1px solid rgba(204, 198, 198, 0.492);
+   /* overflow-y: scroll; */
+   margin-bottom: .5rem;
+   box-shadow: inset 1px 1px 0 rgba(0,0,0,0.1),inset 0 -1px 0 rgba(0,0,0,0.1);
+
+}
+
+.note .tools{
+    position: sticky;
+    display: flex;
+    justify-content:flex-end;
+    padding: 0.3rem;
+    
+}
+.note .tools button{
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+.note textarea{
+    outline: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: none;
+    height: 7rem;
+    width: 100%;
+    border: 1px solid rgba(204, 198, 198, 0.492);
+    padding: 20px;
+    
+}
+.fa-edit, .fa-trash-alt{
+    color: whitesmoke;
+    padding: 10px;
+    background-color: rgb(16, 206, 16);
+    border-radius: 50%;
+
+}
+.fa-trash-alt{
+    background-color: crimson;
+}
+
+.fa-edit:hover{
+    background-color: whitesmoke;
+    color:  rgb(16, 206, 16);
+    filter: drop-shadow(0px,10px,8px rgb(219,218,218));
+}
+.fa-trash-alt:hover{
+    background-color: whitesmoke;
+    color:crimson;
+    filter: drop-shadow(0px,10px,8px rgb(219,218,218));
+}
+.main{
+    padding: 5px 7px;
+    background-color: white;
+    height: 7rem;
+    overflow-y: scroll;
+ 
+    border: 1px solid rgba(204, 198, 198, 0.492);
+}
+.hidden{
+    /* background-color: red; */
+    display: none;
+
+}
